@@ -1,0 +1,10 @@
+numpy
+google-generativeai
+groq
+chromadb
+fastapi
+uvicorn[standard]
+pypdf
+python-docx
+requests
+beautifulsoup4

@@ -1,0 +1,23 @@
+# Local data and secrets
+chroma_db/
+.env
+documents/
+url_content.txt
+qna.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
