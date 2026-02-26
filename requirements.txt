@@ -3,6 +3,7 @@ google-generativeai
 groq
 chromadb
 fastapi
+python-multipart
 uvicorn[standard]
 pypdf
 python-docx
