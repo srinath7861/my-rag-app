@@ -62,7 +62,7 @@
 </head>
 <body>
 <div class="app">
-  <div class="api-row"><label>API:</label><input type="text" id="apiBase" value="http://localhost:8000" /></div>
+  <div class="api-row"><label>API:</label><input type="text" id="apiBase" value="" placeholder="Same as this page if deployed" /></div>
   <nav>
     <a href="#" id="navChat" class="active">Chat</a>
     <a href="#" id="navKB">Knowledge base</a>
@@ -143,7 +143,8 @@
   const apiBaseEl = document.getElementById('apiBase');
   function getBase() {
     let b = apiBaseEl.value.trim();
-    return (b || 'http://localhost:8000').replace(/\/$/, '');
+    if (!b) b = window.location.origin; // when deployed, API is same host
+    return b.replace(/\/$/, '');
   }
 
   const messages = [];
